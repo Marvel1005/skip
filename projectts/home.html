@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Prathamesh's | Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #70fdf8;
+      color: rgb(191, 198, 221);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 70px;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 155px;
+      z-index: 1000;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 20px;
+    }
+
+    .sidebar li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .sidebar li a:hover {
+      background-color: #e4d6d6;
+    }
+
+    .sidebar li a img {
+      width: 40px;
+      height: auto;
+    }
+
+    .sidebar li a span {
+      font-size: 12px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .herosection {
+      text-align: center;
+    }
+
+    .leftsection {
+      display: inline-block;
+      text-align: left;
+      width: 30%;
+    }
+
+    .rightsection {
+      width: 80px;
+    }
+
+    .rightsection img {
+      width: 200px;
+      margin: 50px;
+    }
+
+    .typed-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .main {
+      margin-left: 70px;
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    #centeredText {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 125px;
+      padding: 200px
+    }
+
+    .highlight {
+      color: black;
+      font-size: 2.5rem;
+    }
+
+    #element {
+      color: rgb(219, 18, 165);
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#home">
+              <img src="home-button_5974636.png" ">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href=" #about">
+              <img src="profile_711769.png" alt="About">
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              <img src="development_9332114.png" alt="Experience">
+              <span>Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <img src="document_11213722.png" alt="Projects">
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <img src="envelope_4942672.png" alt="Contact">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="herosection">
+      <div class="typed-container">
+        <div class="center">
+          <div class="leftsection">
+            <span class="highlight">Prathamesh Jadhav</span>
+            <p>
+              <span id="element"></span>
+            </p>
+            &nbsp;
+            <div class="social links">
+              <a href="https://www.linkedin.com/in/prathamesh-jadhav-1526402b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="linkedin"><i class="bx bxl-linkedin"></i><img src="linkedin_3128219.png" height="25px"></a>
+              &nbsp;
+              <a href="https://github.com/Marvel1005" class="google-plus"><i class="bx bxl-github"></i><img
+                  src="github_733609.png" height="25px"></a>
+            </div>
+          </div>
+          <div class="rightsection">
+            <img src="bg2.jpg" width="600px">
+          </div>
+    </section>
+    <div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Welcome to my portfolio', 'I am a Webdevloper'],
+          typeSpeed: 50,
+        });
+      </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+  </main>
+</body>
+
+</html>
