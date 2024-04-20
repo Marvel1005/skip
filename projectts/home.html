@@ -25,27 +25,29 @@
       background-color: #70fdf8;
       color: rgb(191, 198, 221);
       font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .sidebar {
       height: 100vh;
       width: 70px;
       padding: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
-      padding-top: 155px;
-      z-index: 1000;
     }
 
     .sidebar ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
     }
 
     .sidebar li {
@@ -75,33 +77,28 @@
 
     .center {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
-    }
-
-    .herosection {
-      text-align: center;
     }
 
     .leftsection {
-      display: inline-block;
       text-align: left;
-      width: 30%;
+      width: 45%;
     }
 
-    .rightsection {
-      width: 80px;
+    .leftsection h1 {
+      font-size: 3rem;
+      color: black;
     }
 
-    .rightsection img {
-      width: 200px;
-      margin: 50px;
-    }
+    /* .rightsection img {
+      width: 45%;
+    } */
 
     .typed-container {
-      text-align: center;
-      margin-top: 10px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
     }
 
     .main {
@@ -117,13 +114,6 @@
     .container {
       display: flex;
       justify-content: center;
-      margin: 125px;
-      padding: 200px
-    }
-
-    .highlight {
-      color: black;
-      font-size: 2.5rem;
     }
 
     #element {
@@ -179,7 +169,7 @@
       <div class="typed-container">
         <div class="center">
           <div class="leftsection">
-            <span class="highlight">Prathamesh Jadhav</span>
+            <h1 class="highlight">Prathamesh Jadhav</h1>
             <p>
               <span id="element"></span>
             </p>
@@ -195,6 +185,7 @@
           <div class="rightsection">
             <img src="bg2.jpg" width="600px">
           </div>
+        </div>
     </section>
     <div>
       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
